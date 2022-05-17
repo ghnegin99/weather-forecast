@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* body {
+    background-image: url('background.jpg');
+    background-position: top;
+    background-size: cover;
+} */
+body {
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body::after {
+    content: "";
+    background-image: url('background.jpg');
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+} */
+
+.form {
+    /* display: flex; */
+    margin: 35px 5px 60px 5px;
+    height: fit-content;
+    width: min-content;
+    margin-right: 10px;
+    transition: all 0.3s ease-in;
+    position: sticky;
+    top: 3px;
+    z-index: 1;
+}
+
+.form:hover {
+    transform: scale(1.02);
+}
+
+form {
+    line-height: 28px;
+    width: 350px;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 70px 32px 0px;
+    transition: all 0.3ms ease-in;
+    border-radius: 50px;
+    box-shadow: inset 1px 1px 2px 3px rgb(240 240 240), inset -1px -1px 2px 3px rgb(240 240 240);
+}
+
+form input {
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(82, 82, 82);
+
+}
+
+form input::placeholder {
+    color: rgb(82, 82, 82);
+}
+
+
+form button {
+    background: transparent;
+    font-size: 18px;
+    border-radius: 50%;
+    color: rgb(82, 82, 82);
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 8px;
+
+}
+
+.msg {
+    margin: -28px 98px 10px 30px;
+    font-size: 14px;
+    color: rgb(223, 32, 32);
+}
+
+
+
+.conditions {
+    margin: 20px 62px;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, auto));
+}
+
+
+ul {
+    /* grid-row-gap: 3px; */
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 30px 20px;
+    list-style: none;
+}
+
+ul li {
+    width: 16vw;
+    height: 34vh;
+    border-radius: 20px;
+    /* background-color: rgba(60, 198, 222, 0.775); */
+    margin: 5px 5px;
+    padding: 16px 10px;
+    /* line-height: 28px; */
+    font-size: 24px;
+    color: rgb(99, 99, 99);
+    transition: all 0.3s ease-in;
+}
+
+ul li:hover {
+    transform: scale(1.18);
+}
+
+/* .city-content {
+    background-color: rgb(17, 3, 31);
+    height: 220px;
+    width: 178px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+.temperatureDiv,
+.descriptionDiv,
+.humidityDiv {
+    color: #cbcbcb;
+    text-shadow: 1px 1px rgb(99, 99, 99);
+    padding: 6px 10px;
+    font-size: 20px;
+}
+
+.cityNameHeader {
+    color: #cbcbcb;
+    text-shadow: 2px 2px rgb(99, 99, 99);
+    padding: 4px 10px 30px 10px;
+}
+
+.temperatureDiv,
+.descriptionDiv {
+    font-size: 20px;
+}
+
+.humidityDiv {
+    font-size: 16px;
+}
+
+
+.descriptionImgDiv {
+    display: flex;
+    align-items: center;
+}
